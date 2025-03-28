@@ -12,7 +12,6 @@ export default function Transcriber() {
   const animationFrameRef = useRef(null);
 
   const commands = {
-    "hello": () => alert("Hello!"),
     "open google": () => window.open("https://www.google.com", "_blank"),
   };
 
@@ -106,7 +105,7 @@ export default function Transcriber() {
       <canvas ref={canvasRef} className="w-3/4 max-w h-32 mt-6 bg-gray-700 rounded-lg"></canvas>
       {transcriptionText && (
         <div className="w-3/4 max-w-lg mt-6 p-4 bg-gray-800 shadow-md rounded-lg">
-          <h2 className="text-lg font-semibold">Transcription:</h2>
+          <h2 className="text-xl font-semibold justify justify-center items-center">Transcription</h2>
           <p className="text-xl font-bold text-gray-300 mt-2">{transcriptionText}</p>
         </div>
       )}
